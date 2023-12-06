@@ -8,8 +8,6 @@ async function getTerm(id: number) {
 
 export default async function DetailCategory({params}: { params: { id: number }; }) {
     const data = await getTerm(params.id);
-    console.log(data)
-
     return (
         <>
             <p>name: {data.data?.term_qq}</p>
